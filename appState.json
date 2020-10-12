@@ -1,8 +1,8 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "d1513426-8e78-4197-b69a-b43f8a8fe56d": {
-        "id": "d1513426-8e78-4197-b69a-b43f8a8fe56d",
+      "a712193a-90c2-4fcc-93eb-0d71775544d3": {
+        "id": "a712193a-90c2-4fcc-93eb-0d71775544d3",
         "parent": null,
         "name": "MyFirstProject.js",
         "type": "JS_LAMBDA",
@@ -12,7 +12,7 @@
         "filePath": "MyFirstProject.js",
         "cursor": {
           "lineNumber": 2,
-          "column": 11
+          "column": 5
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -23,11 +23,11 @@
           "name": "MyFirstProject"
         },
         "triggers": [],
-        "lastUpdated": 1602238841888,
+        "lastUpdated": 1602492540285,
         "testCases": {
-          "74a03f13-e323-42d7-b2c8-a084453ec51f": {
-            "id": "74a03f13-e323-42d7-b2c8-a084453ec51f",
-            "functionId": "d1513426-8e78-4197-b69a-b43f8a8fe56d",
+          "095aaed3-d4d0-4e8c-866a-524d986d6a55": {
+            "id": "095aaed3-d4d0-4e8c-866a-524d986d6a55",
+            "functionId": "a712193a-90c2-4fcc-93eb-0d71775544d3",
             "name": "My First Test Case",
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
@@ -35,14 +35,14 @@
       }
     },
     "openFiles": [
-      "d1513426-8e78-4197-b69a-b43f8a8fe56d"
+      "a712193a-90c2-4fcc-93eb-0d71775544d3"
     ],
-    "currentFileId": "d1513426-8e78-4197-b69a-b43f8a8fe56d",
+    "currentFileId": "a712193a-90c2-4fcc-93eb-0d71775544d3",
     "resources": {},
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
-      "dialect": null,
+      "dialect": "CloudFormation",
       "definitions": null
     },
     "envVariables": [
@@ -68,7 +68,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1602238892871
+    "lastSave": 1602492831157
   },
   "VCS_STATE": {
     "provider": "GitHub",
