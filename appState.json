@@ -1,8 +1,8 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "a712193a-90c2-4fcc-93eb-0d71775544d3": {
-        "id": "a712193a-90c2-4fcc-93eb-0d71775544d3",
+      "8f878230-0326-4694-9a11-d92b9a7a357f": {
+        "id": "8f878230-0326-4694-9a11-d92b9a7a357f",
         "parent": null,
         "name": "MyFirstProject.js",
         "type": "JS_LAMBDA",
@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "MyFirstProject.js",
         "cursor": {
-          "lineNumber": 2,
-          "column": 5
+          "lineNumber": 1,
+          "column": 1
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -23,11 +23,11 @@
           "name": "MyFirstProject"
         },
         "triggers": [],
-        "lastUpdated": 1602492540285,
+        "lastUpdated": 1603345773175,
         "testCases": {
-          "095aaed3-d4d0-4e8c-866a-524d986d6a55": {
-            "id": "095aaed3-d4d0-4e8c-866a-524d986d6a55",
-            "functionId": "a712193a-90c2-4fcc-93eb-0d71775544d3",
+          "bfc8e13e-c512-47e8-b96f-dd26b6e7b2e5": {
+            "id": "bfc8e13e-c512-47e8-b96f-dd26b6e7b2e5",
+            "functionId": "8f878230-0326-4694-9a11-d92b9a7a357f",
             "name": "My First Test Case",
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
@@ -35,14 +35,14 @@
       }
     },
     "openFiles": [
-      "a712193a-90c2-4fcc-93eb-0d71775544d3"
+      "8f878230-0326-4694-9a11-d92b9a7a357f"
     ],
-    "currentFileId": "a712193a-90c2-4fcc-93eb-0d71775544d3",
+    "currentFileId": "8f878230-0326-4694-9a11-d92b9a7a357f",
     "resources": {},
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
-      "dialect": "CloudFormation",
+      "dialect": null,
       "definitions": null
     },
     "envVariables": [
@@ -68,7 +68,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1602492831157
+    "lastSave": 1603346687593
   },
   "VCS_STATE": {
     "provider": "GitHub",
