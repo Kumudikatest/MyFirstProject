@@ -1,8 +1,8 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "ec0f310e-a62e-408a-b719-71ab9454b780": {
-        "id": "ec0f310e-a62e-408a-b719-71ab9454b780",
+      "e657d5bb-1df6-49eb-ba49-1e15526fbe0a": {
+        "id": "e657d5bb-1df6-49eb-ba49-1e15526fbe0a",
         "parent": null,
         "name": "MyFirstProject.js",
         "type": "JS_LAMBDA",
@@ -15,29 +15,192 @@
           "column": 5
         },
         "config": {
+          "runtime": "nodejs12.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "111111111111111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "triggers": [],
+        "lastUpdated": 1603435306050,
+        "testCases": {
+          "1e7450a5-e890-4625-8d3a-407fe15edef2": {
+            "id": "1e7450a5-e890-4625-8d3a-407fe15edef2",
+            "functionId": "e657d5bb-1df6-49eb-ba49-1e15526fbe0a",
+            "name": "My First Test Case",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
+        }
+      },
+      "07986797-9a07-426d-a0af-f2aeafce5115": {
+        "id": "07986797-9a07-426d-a0af-f2aeafce5115",
+        "parent": null,
+        "name": "saa.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "saa.js",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
+        "config": {
           "runtime": "nodejs10.x",
           "handler": "handler",
           "timeout": 60,
           "memory": 128,
           "layers": [],
-          "name": "MyFirstProject"
+          "name": "saa"
         },
         "triggers": [],
-        "lastUpdated": 1603373163572,
-        "testCases": {
-          "c6a6d503-6c51-40f6-b452-a294c65617ce": {
-            "id": "c6a6d503-6c51-40f6-b452-a294c65617ce",
-            "functionId": "ec0f310e-a62e-408a-b719-71ab9454b780",
-            "name": "My First Test Case",
-            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
-          }
-        }
+        "lastUpdated": 1603434477551
+      },
+      "bddae133-b8c8-4a09-a5e2-bffff71e2a43": {
+        "id": "bddae133-b8c8-4a09-a5e2-bffff71e2a43",
+        "parent": null,
+        "name": "dss1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "dss1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111.js",
+        "lastUpdated": 1603435359806
+      },
+      "7863d2b9-aeac-4775-93d8-2c72f6068d29": {
+        "id": "7863d2b9-aeac-4775-93d8-2c72f6068d29",
+        "parent": null,
+        "name": "pyasad.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "pyasad.py",
+        "cursor": {
+          "lineNumber": 4,
+          "column": 1
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "py"
+        },
+        "triggers": [],
+        "lastUpdated": 1603434515533
+      },
+      "b7a1440d-4e5b-48c7-b78f-043750458e30": {
+        "id": "b7a1440d-4e5b-48c7-b78f-043750458e30",
+        "parent": null,
+        "name": "subend",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "54bffa9d-69fd-41bb-9329-57885ab9fbec",
+          "b22e0006-7f4f-478c-9a49-2e78899ed711",
+          "500e3a5c-984b-45de-bd70-0d5ead52330c"
+        ],
+        "isRemovable": true,
+        "filePath": "subend"
+      },
+      "54bffa9d-69fd-41bb-9329-57885ab9fbec": {
+        "id": "54bffa9d-69fd-41bb-9329-57885ab9fbec",
+        "parent": "b7a1440d-4e5b-48c7-b78f-043750458e30",
+        "name": "dd.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "subend/dd.js",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "subend"
+        },
+        "triggers": [],
+        "lastUpdated": 1603435655936
+      },
+      "b22e0006-7f4f-478c-9a49-2e78899ed711": {
+        "id": "b22e0006-7f4f-478c-9a49-2e78899ed711",
+        "parent": "b7a1440d-4e5b-48c7-b78f-043750458e30",
+        "name": "1.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "subend/1.js",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "subend"
+        },
+        "triggers": [],
+        "lastUpdated": 1603435673079
+      },
+      "500e3a5c-984b-45de-bd70-0d5ead52330c": {
+        "id": "500e3a5c-984b-45de-bd70-0d5ead52330c",
+        "parent": "b7a1440d-4e5b-48c7-b78f-043750458e30",
+        "name": "2.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "subend/2.js",
+        "cursor": {
+          "lineNumber": 4,
+          "column": 3
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "subend"
+        },
+        "triggers": [],
+        "lastUpdated": 1603435682884
+      },
+      "742b6b08-3e65-4d00-91b7-9d5727d22a1f": {
+        "id": "742b6b08-3e65-4d00-91b7-9d5727d22a1f",
+        "parent": null,
+        "name": "sample - Copy (2).txt",
+        "type": "TEXT_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "sample - Copy (2).txt",
+        "lastUpdated": 1603436767342
       }
     },
     "openFiles": [
-      "ec0f310e-a62e-408a-b719-71ab9454b780"
+      "e657d5bb-1df6-49eb-ba49-1e15526fbe0a",
+      "07986797-9a07-426d-a0af-f2aeafce5115",
+      "bddae133-b8c8-4a09-a5e2-bffff71e2a43",
+      "7863d2b9-aeac-4775-93d8-2c72f6068d29",
+      "54bffa9d-69fd-41bb-9329-57885ab9fbec",
+      "b22e0006-7f4f-478c-9a49-2e78899ed711",
+      "500e3a5c-984b-45de-bd70-0d5ead52330c",
+      "742b6b08-3e65-4d00-91b7-9d5727d22a1f"
     ],
-    "currentFileId": "ec0f310e-a62e-408a-b719-71ab9454b780",
+    "currentFileId": "742b6b08-3e65-4d00-91b7-9d5727d22a1f",
     "resources": {},
     "customTemplate": {
       "syntax": "JSON",
@@ -60,7 +223,7 @@
     }
   },
   "PROJECT_META": {
-    "sigmaVersion": "1.4.4.1",
+    "sigmaVersion": "1.4.5",
     "projectName": "MyFirstProject",
     "projectDescription": "My First Project",
     "projectVersion": "1.0.0",
@@ -68,7 +231,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1603373170762
+    "lastSave": 1603436778357
   },
   "VCS_STATE": {
     "provider": "GitHub",
