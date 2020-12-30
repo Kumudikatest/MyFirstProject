@@ -1,21 +1,21 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "17590eb8-f5ca-4f4e-8d55-63b7c7c7c319": {
-        "id": "17590eb8-f5ca-4f4e-8d55-63b7c7c7c319",
+      "8a3fff98-f70e-4ff7-b5d9-86460f07e8b8": {
+        "id": "8a3fff98-f70e-4ff7-b5d9-86460f07e8b8",
         "parent": null,
-        "name": "MyFirstProject.js",
-        "type": "JS_LAMBDA",
+        "name": "MyFirstProject.py",
+        "type": "PYTHON_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "MyFirstProject.js",
+        "filePath": "MyFirstProject.py",
         "cursor": {
           "lineNumber": 2,
           "column": 5
         },
         "config": {
-          "runtime": "nodejs10.x",
+          "runtime": "python3.8",
           "handler": "handler",
           "timeout": 60,
           "memory": 128,
@@ -23,11 +23,11 @@
           "name": "MyFirstProject"
         },
         "triggers": [],
-        "lastUpdated": 1608207255720,
+        "lastUpdated": 1609322542744,
         "testCases": {
-          "82533227-6e02-4bd8-bff9-e033d32418f9": {
-            "id": "82533227-6e02-4bd8-bff9-e033d32418f9",
-            "functionId": "17590eb8-f5ca-4f4e-8d55-63b7c7c7c319",
+          "09a84c08-fb0e-420e-a1aa-7681bec2ebad": {
+            "id": "09a84c08-fb0e-420e-a1aa-7681bec2ebad",
+            "functionId": "8a3fff98-f70e-4ff7-b5d9-86460f07e8b8",
             "name": "My First Test Case",
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
@@ -35,9 +35,9 @@
       }
     },
     "openFiles": [
-      "17590eb8-f5ca-4f4e-8d55-63b7c7c7c319"
+      "8a3fff98-f70e-4ff7-b5d9-86460f07e8b8"
     ],
-    "currentFileId": "17590eb8-f5ca-4f4e-8d55-63b7c7c7c319",
+    "currentFileId": "8a3fff98-f70e-4ff7-b5d9-86460f07e8b8",
     "resources": {},
     "customTemplate": {
       "syntax": "JSON",
@@ -60,15 +60,15 @@
     }
   },
   "PROJECT_META": {
-    "sigmaVersion": "1.4.7.1",
+    "sigmaVersion": "1.4.8",
     "projectName": "MyFirstProject",
     "projectDescription": "My First Project",
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "language": "nodejs",
+    "language": "python",
     "platformRegions": {},
-    "lastSave": 1608207265913
+    "lastSave": 1609322615346
   },
   "VCS_STATE": {
     "provider": "GitHub",
