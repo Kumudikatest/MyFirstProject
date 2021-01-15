@@ -1,21 +1,21 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "4119efff-a13c-4dc9-8591-4dfb7f5cf99e": {
-        "id": "4119efff-a13c-4dc9-8591-4dfb7f5cf99e",
+      "5cf13fb7-fc59-4d87-93ba-101e3fce2ab3": {
+        "id": "5cf13fb7-fc59-4d87-93ba-101e3fce2ab3",
         "parent": null,
-        "name": "MyFirstProject.js",
-        "type": "JS_LAMBDA",
+        "name": "MyFirstProject.py",
+        "type": "PYTHON_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "MyFirstProject.js",
+        "filePath": "MyFirstProject.py",
         "cursor": {
           "lineNumber": 2,
           "column": 5
         },
         "config": {
-          "runtime": "nodejs10.x",
+          "runtime": "python3.8",
           "handler": "handler",
           "timeout": 60,
           "memory": 128,
@@ -23,11 +23,11 @@
           "name": "MyFirstProject"
         },
         "triggers": [],
-        "lastUpdated": 1610704046537,
+        "lastUpdated": 1610704147866,
         "testCases": {
-          "3586f6d5-3abc-40b1-9636-3cb2004af75f": {
-            "id": "3586f6d5-3abc-40b1-9636-3cb2004af75f",
-            "functionId": "4119efff-a13c-4dc9-8591-4dfb7f5cf99e",
+          "b5466ad4-af4e-4766-b8d3-14cd70338483": {
+            "id": "b5466ad4-af4e-4766-b8d3-14cd70338483",
+            "functionId": "5cf13fb7-fc59-4d87-93ba-101e3fce2ab3",
             "name": "My First Test Case",
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
@@ -35,9 +35,9 @@
       }
     },
     "openFiles": [
-      "4119efff-a13c-4dc9-8591-4dfb7f5cf99e"
+      "5cf13fb7-fc59-4d87-93ba-101e3fce2ab3"
     ],
-    "currentFileId": "4119efff-a13c-4dc9-8591-4dfb7f5cf99e",
+    "currentFileId": "5cf13fb7-fc59-4d87-93ba-101e3fce2ab3",
     "resources": {},
     "customTemplate": {
       "syntax": "JSON",
@@ -66,9 +66,9 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "language": "nodejs",
+    "language": "python",
     "platformRegions": {},
-    "lastSave": 1610704054862
+    "lastSave": 1610704152401
   },
   "VCS_STATE": {
     "provider": "GitHub",
