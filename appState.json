@@ -1,8 +1,8 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "b82346b7-7f2e-4be5-bee5-7ab002796e7a": {
-        "id": "b82346b7-7f2e-4be5-bee5-7ab002796e7a",
+      "4119efff-a13c-4dc9-8591-4dfb7f5cf99e": {
+        "id": "4119efff-a13c-4dc9-8591-4dfb7f5cf99e",
         "parent": null,
         "name": "MyFirstProject.js",
         "type": "JS_LAMBDA",
@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "MyFirstProject.js",
         "cursor": {
-          "lineNumber": 4,
-          "column": 23
+          "lineNumber": 2,
+          "column": 5
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -23,11 +23,11 @@
           "name": "MyFirstProject"
         },
         "triggers": [],
-        "lastUpdated": 1609390272734,
+        "lastUpdated": 1610704046537,
         "testCases": {
-          "35c33653-3780-49b0-bb10-94b07e3a6920": {
-            "id": "35c33653-3780-49b0-bb10-94b07e3a6920",
-            "functionId": "b82346b7-7f2e-4be5-bee5-7ab002796e7a",
+          "3586f6d5-3abc-40b1-9636-3cb2004af75f": {
+            "id": "3586f6d5-3abc-40b1-9636-3cb2004af75f",
+            "functionId": "4119efff-a13c-4dc9-8591-4dfb7f5cf99e",
             "name": "My First Test Case",
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
@@ -35,9 +35,9 @@
       }
     },
     "openFiles": [
-      "b82346b7-7f2e-4be5-bee5-7ab002796e7a"
+      "4119efff-a13c-4dc9-8591-4dfb7f5cf99e"
     ],
-    "currentFileId": "b82346b7-7f2e-4be5-bee5-7ab002796e7a",
+    "currentFileId": "4119efff-a13c-4dc9-8591-4dfb7f5cf99e",
     "resources": {},
     "customTemplate": {
       "syntax": "JSON",
@@ -60,7 +60,7 @@
     }
   },
   "PROJECT_META": {
-    "sigmaVersion": "1.5.0",
+    "sigmaVersion": "1.5.1",
     "projectName": "MyFirstProject",
     "projectDescription": "My First Project",
     "projectVersion": "1.0.0",
@@ -68,7 +68,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1609390332086
+    "lastSave": 1610704054862
   },
   "VCS_STATE": {
     "provider": "GitHub",
