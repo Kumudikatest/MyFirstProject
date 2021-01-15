@@ -1,3 +1,3 @@
-def handler(event, context):
+def handler(request):
     
-    return {"message": "Successfully executed"}
+    return "Successfully executed"
