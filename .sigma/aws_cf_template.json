@@ -12,10 +12,6 @@
     }
   },
   "Outputs": {
-    "cognitoApiGateway": {
-      "Description": "ID of Cognito user pool ApiGateway",
-      "Value": "us-east-1_jfB99rZCt"
-    },
     "MyFirstProject": {
       "Description": "ARN of Lambda function MyFirstProject",
       "Value": {
@@ -84,24 +80,7 @@
               }
             }
           ]
-        },
-        "Policies": [
-          {
-            "PolicyName": "MyFirstProjectPolicy",
-            "PolicyDocument": {
-              "Version": "2012-10-17",
-              "Statement": [
-                {
-                  "Effect": "Allow",
-                  "Action": [
-                    "cognito-idp:ListUsers"
-                  ],
-                  "Resource": "arn:aws:cognito-idp:us-east-1:263248768798:userpool/us-east-1_jfB99rZCt"
-                }
-              ]
-            }
-          }
-        ]
+        }
       }
     }
   }
