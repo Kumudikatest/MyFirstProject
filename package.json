@@ -1,6 +1,9 @@
 {
-  "name": "MyFirstProject",
-  "version": "1.0.0",
-  "dependencies": {},
-  "devDependencies": {}
+    "devDependencies": {
+        "aws-sdk": "2.817.0"
+    },
+    "dependencies": {
+        "mysql": "2.18.1",
+        "mathsjs": "1.4.0"
+    }
 }
