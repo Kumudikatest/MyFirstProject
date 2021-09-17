@@ -559,8 +559,8 @@
       {
         "lambdaId": "all",
         "varKey": "Kumu1",
-        "varValue": null,
-        "shouldPersist": false,
+        "varValue": "Vari1",
+        "shouldPersist": true,
         "displayOnly": false,
         "editable": true
       }
@@ -598,7 +598,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1631884925198
+    "lastSave": 1631884997975
   },
   "VCS_STATE": {
     "provider": "GitHub",

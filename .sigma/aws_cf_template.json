@@ -9,10 +9,6 @@
     "lambdaCodeKeyParameter": {
       "Type": "String",
       "Description": "S3 key of the Lambda deployment package"
-    },
-    "envVarKumu1Parameter": {
-      "Type": "String",
-      "Description": "Value of the environment variable: Kumu1, for all Lambdas"
     }
   },
   "Outputs": {
@@ -222,9 +218,7 @@
         },
         "Environment": {
           "Variables": {
-            "Kumu1": {
-              "Ref": "envVarKumu1Parameter"
-            },
+            "Kumu1": "Vari1",
             "SIGMA_AWS_ACC_ID": {
               "Ref": "AWS::AccountId"
             }
@@ -322,9 +316,7 @@
         },
         "Environment": {
           "Variables": {
-            "Kumu1": {
-              "Ref": "envVarKumu1Parameter"
-            },
+            "Kumu1": "Vari1",
             "SIGMA_AWS_ACC_ID": {
               "Ref": "AWS::AccountId"
             }
@@ -405,9 +397,7 @@
         },
         "Environment": {
           "Variables": {
-            "Kumu1": {
-              "Ref": "envVarKumu1Parameter"
-            },
+            "Kumu1": "Vari1",
             "SIGMA_AWS_ACC_ID": {
               "Ref": "AWS::AccountId"
             }
@@ -488,9 +478,7 @@
         },
         "Environment": {
           "Variables": {
-            "Kumu1": {
-              "Ref": "envVarKumu1Parameter"
-            },
+            "Kumu1": "Vari1",
             "SIGMA_AWS_ACC_ID": {
               "Ref": "AWS::AccountId"
             }
@@ -522,7 +510,7 @@
         }
       }
     },
-    "apigKeyPairsDeployment1631884930684": {
+    "apigKeyPairsDeployment1631885003341": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": "7l8l44lsj6",
@@ -533,7 +521,7 @@
         "apigKeyPairskeypairsANY"
       ]
     },
-    "apigjul20Deployment1631884930685": {
+    "apigjul20Deployment1631885003341": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": "b42qvqd0a9",
@@ -544,7 +532,7 @@
         "apigjul20jul20ANY"
       ]
     },
-    "apigMockPaddleDeployment1631884930685": {
+    "apigMockPaddleDeployment1631885003341": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": "eeaq92konl",
