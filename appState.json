@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "MyFirstProject.js",
         "cursor": {
-          "lineNumber": 12,
-          "column": 33
+          "lineNumber": 3,
+          "column": 1
         },
         "config": {
           "runtime": "nodejs14.x",
@@ -28,7 +28,7 @@
             "config": {}
           }
         ],
-        "lastUpdated": 1631880111361,
+        "lastUpdated": 1631884904820,
         "testCases": {
           "a896fd8f-d23c-46f1-bdc6-45c6fd1a1f80": {
             "id": "a896fd8f-d23c-46f1-bdc6-45c6fd1a1f80",
@@ -62,7 +62,9 @@
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "5381448d-6021-4e63-8d8d-2c73e34e2276"
+          "5381448d-6021-4e63-8d8d-2c73e34e2276",
+          "e2d6de82-ef29-4cad-9260-20cea5fa75b9",
+          "cea2844c-c422-4cff-86cb-b970e82b3df6"
         ],
         "isRemovable": true,
         "filePath": "kdemosubdir"
@@ -94,7 +96,7 @@
             "config": {}
           }
         ],
-        "lastUpdated": 1631880046633,
+        "lastUpdated": 1631884903872,
         "testCases": {
           "a71aee20-cf3a-4275-a07c-d068ab5f7ecb": {
             "id": "a71aee20-cf3a-4275-a07c-d068ab5f7ecb",
@@ -104,11 +106,104 @@
             "eventTemplate": "hello-world"
           }
         }
+      },
+      "6edd3026-ef32-4ae0-9528-50da98b54e36": {
+        "id": "6edd3026-ef32-4ae0-9528-50da98b54e36",
+        "parent": null,
+        "name": "krootpy.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "krootpy.py",
+        "cursor": {
+          "lineNumber": 3,
+          "column": 5
+        },
+        "config": {
+          "runtime": "python3.9",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "krootpy"
+        },
+        "triggers": [
+          {
+            "resourceName": "apigMockPaddle20proxyget",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1631884902341,
+        "testCases": {
+          "34901aa4-cd32-4f0c-805b-5a1cdf6bdcc5": {
+            "id": "34901aa4-cd32-4f0c-805b-5a1cdf6bdcc5",
+            "name": "Test event",
+            "functionId": "6edd3026-ef32-4ae0-9528-50da98b54e36",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "b539080b-20f4-49bf-8e98-4d5f1a155404": {
+        "id": "b539080b-20f4-49bf-8e98-4d5f1a155404",
+        "parent": null,
+        "name": "requirements.txt",
+        "type": "TEXT_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "requirements.txt"
+      },
+      "e2d6de82-ef29-4cad-9260-20cea5fa75b9": {
+        "id": "e2d6de82-ef29-4cad-9260-20cea5fa75b9",
+        "parent": "a628455c-5e5e-4062-ab6c-e5a513be9e6e",
+        "name": "kdemosubpy.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "kdemosubdir/kdemosubpy.py",
+        "cursor": {
+          "lineNumber": 4,
+          "column": 28
+        },
+        "config": {
+          "runtime": "python3.9",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "kdemosubpy"
+        },
+        "triggers": [],
+        "lastUpdated": 1631883587029,
+        "testCases": {
+          "7cdeebf1-29f3-464d-8008-4c2773e58304": {
+            "id": "7cdeebf1-29f3-464d-8008-4c2773e58304",
+            "name": "Test event",
+            "functionId": "e2d6de82-ef29-4cad-9260-20cea5fa75b9",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "cea2844c-c422-4cff-86cb-b970e82b3df6": {
+        "id": "cea2844c-c422-4cff-86cb-b970e82b3df6",
+        "parent": "a628455c-5e5e-4062-ab6c-e5a513be9e6e",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "kdemosubdir/__init__.py"
       }
     },
     "openFiles": [
       "b6e2e48d-a753-4c8a-b739-a583a2cf644a",
-      "5381448d-6021-4e63-8d8d-2c73e34e2276"
+      "5381448d-6021-4e63-8d8d-2c73e34e2276",
+      "6edd3026-ef32-4ae0-9528-50da98b54e36",
+      "e2d6de82-ef29-4cad-9260-20cea5fa75b9"
     ],
     "currentFileId": "b6e2e48d-a753-4c8a-b739-a583a2cf644a",
     "resources": {
@@ -416,6 +511,34 @@
           "stageDeploymentId": "pj6j29",
           "mode": 1
         }
+      },
+      "apigMockPaddle20proxyget": {
+        "name": "apigMockPaddle20proxyget",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 1,
+          "apiName": "MockPaddle",
+          "apiId": "eeaq92konl",
+          "endpointType": "EDGE",
+          "rootResourceId": "g3hogy4cf9",
+          "existingResources": {
+            "/2.0/{proxy+}": "00htxl",
+            "/": "g3hogy4cf9",
+            "/2.0": "lckdvi"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/2.0/{proxy+}",
+          "resourceName": "2.0/{proxy+}",
+          "resourceId": "00htxl",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "api",
+          "stageDeploymentId": "t2a5e1",
+          "mode": 1
+        }
       }
     },
     "customTemplate": {
@@ -432,6 +555,14 @@
         "shouldPersist": false,
         "displayOnly": false,
         "editable": false
+      },
+      {
+        "lambdaId": "all",
+        "varKey": "Kumu1",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": true
       }
     ],
     "packageJSON": {
@@ -448,6 +579,12 @@
           "version": "2.18.1",
           "dev": false,
           "language": "nodejs"
+        },
+        "numpy": {
+          "name": "numpy",
+          "version": "1.21.2",
+          "dev": false,
+          "language": "python"
         }
       }
     }
@@ -461,7 +598,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1631880231297
+    "lastSave": 1631884925198
   },
   "VCS_STATE": {
     "provider": "GitHub",
