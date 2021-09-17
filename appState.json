@@ -1,8 +1,8 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "44b5c139-3763-4559-aff0-7892acb85dc0": {
-        "id": "44b5c139-3763-4559-aff0-7892acb85dc0",
+      "b6e2e48d-a753-4c8a-b739-a583a2cf644a": {
+        "id": "b6e2e48d-a753-4c8a-b739-a583a2cf644a",
         "parent": null,
         "name": "MyFirstProject.js",
         "type": "JS_LAMBDA",
@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "MyFirstProject.js",
         "cursor": {
-          "lineNumber": 7,
-          "column": 44
+          "lineNumber": 12,
+          "column": 33
         },
         "config": {
           "runtime": "nodejs14.x",
@@ -24,22 +24,29 @@
         },
         "triggers": [
           {
-            "resourceName": "apigjul20jul20any",
+            "resourceName": "apigKeyPairskeypairsany",
             "config": {}
           }
         ],
-        "lastUpdated": 1630927938333,
+        "lastUpdated": 1631880111361,
         "testCases": {
-          "11090bc8-7bb9-41cc-9a58-e563835e759d": {
-            "id": "11090bc8-7bb9-41cc-9a58-e563835e759d",
-            "functionId": "44b5c139-3763-4559-aff0-7892acb85dc0",
+          "a896fd8f-d23c-46f1-bdc6-45c6fd1a1f80": {
+            "id": "a896fd8f-d23c-46f1-bdc6-45c6fd1a1f80",
+            "functionId": "b6e2e48d-a753-4c8a-b739-a583a2cf644a",
             "name": "My First Test Case",
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          },
+          "830958a7-8771-49de-a4ad-5351c4dad33c": {
+            "id": "830958a7-8771-49de-a4ad-5351c4dad33c",
+            "name": "Test event",
+            "functionId": "b6e2e48d-a753-4c8a-b739-a583a2cf644a",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
           }
         }
       },
-      "a1bcf554-2406-4925-a693-a8818eabdf2a": {
-        "id": "a1bcf554-2406-4925-a693-a8818eabdf2a",
+      "ded76535-b3c4-4976-8eb5-e658f1e3036a": {
+        "id": "ded76535-b3c4-4976-8eb5-e658f1e3036a",
         "parent": null,
         "name": "package.json",
         "type": "JSON_FILE",
@@ -47,37 +54,88 @@
         "children": [],
         "isRemovable": true,
         "filePath": "package.json"
+      },
+      "a628455c-5e5e-4062-ab6c-e5a513be9e6e": {
+        "id": "a628455c-5e5e-4062-ab6c-e5a513be9e6e",
+        "parent": null,
+        "name": "kdemosubdir",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "5381448d-6021-4e63-8d8d-2c73e34e2276"
+        ],
+        "isRemovable": true,
+        "filePath": "kdemosubdir"
+      },
+      "5381448d-6021-4e63-8d8d-2c73e34e2276": {
+        "id": "5381448d-6021-4e63-8d8d-2c73e34e2276",
+        "parent": "a628455c-5e5e-4062-ab6c-e5a513be9e6e",
+        "name": "kdemosubnode.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "kdemosubdir/kdemosubnode.js",
+        "cursor": {
+          "lineNumber": 3,
+          "column": 28
+        },
+        "config": {
+          "runtime": "nodejs14.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "kdemosubnode"
+        },
+        "triggers": [
+          {
+            "resourceName": "apigjul20jul20any",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1631880046633,
+        "testCases": {
+          "a71aee20-cf3a-4275-a07c-d068ab5f7ecb": {
+            "id": "a71aee20-cf3a-4275-a07c-d068ab5f7ecb",
+            "name": "Test event",
+            "functionId": "5381448d-6021-4e63-8d8d-2c73e34e2276",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
       }
     },
     "openFiles": [
-      "44b5c139-3763-4559-aff0-7892acb85dc0"
+      "b6e2e48d-a753-4c8a-b739-a583a2cf644a",
+      "5381448d-6021-4e63-8d8d-2c73e34e2276"
     ],
-    "currentFileId": "44b5c139-3763-4559-aff0-7892acb85dc0",
+    "currentFileId": "b6e2e48d-a753-4c8a-b739-a583a2cf644a",
     "resources": {
-      "apigjul20jul20any": {
-        "name": "apigjul20jul20any",
+      "apigKeyPairskeypairsany": {
+        "name": "apigKeyPairskeypairsany",
         "type": "API_GATEWAY",
         "config": {
           "apiType": 1,
           "apiMode": 1,
-          "apiName": "jul20",
-          "apiId": "b42qvqd0a9",
+          "apiName": "KeyPairs",
+          "apiId": "7l8l44lsj6",
           "endpointType": "EDGE",
-          "rootResourceId": "73z5o32xl1",
+          "rootResourceId": "4rn9ymmwsh",
           "existingResources": {
-            "/": "73z5o32xl1",
-            "/jul20": "rxi2wl"
+            "/": "4rn9ymmwsh",
+            "/keypairs": "yqiga4"
           },
           "resourceMode": 1,
-          "resourcePath": "/jul20",
-          "resourceName": "jul20",
-          "resourceId": "rxi2wl",
+          "resourcePath": "/keypairs",
+          "resourceName": "keypairs",
+          "resourceId": "yqiga4",
           "restMethod": "ANY",
           "proxyIntegration": false,
           "enableCORS": false,
           "stageMode": 1,
-          "stageName": "dev",
-          "stageDeploymentId": "pj6j29",
+          "stageName": "api",
+          "stageDeploymentId": "ht3wkn",
           "mode": 1
         }
       },
@@ -331,6 +389,33 @@
             ]
           }
         }
+      },
+      "apigjul20jul20any": {
+        "name": "apigjul20jul20any",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 1,
+          "apiName": "jul20",
+          "apiId": "b42qvqd0a9",
+          "endpointType": "EDGE",
+          "rootResourceId": "73z5o32xl1",
+          "existingResources": {
+            "/": "73z5o32xl1",
+            "/jul20": "rxi2wl"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/jul20",
+          "resourceName": "jul20",
+          "resourceId": "rxi2wl",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "dev",
+          "stageDeploymentId": "pj6j29",
+          "mode": 1
+        }
       }
     },
     "customTemplate": {
@@ -363,12 +448,6 @@
           "version": "2.18.1",
           "dev": false,
           "language": "nodejs"
-        },
-        "mathsjs": {
-          "name": "mathsjs",
-          "version": "1.4.0",
-          "dev": false,
-          "language": "nodejs"
         }
       }
     }
@@ -382,7 +461,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1630930200885
+    "lastSave": 1631880231297
   },
   "VCS_STATE": {
     "provider": "GitHub",
