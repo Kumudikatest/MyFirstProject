@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "MyFirstProject.js",
         "cursor": {
-          "lineNumber": 20,
-          "column": 3
+          "lineNumber": 1,
+          "column": 1
         },
         "config": {
           "runtime": "nodejs14.x",
@@ -139,7 +139,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1645600137410
+    "lastSave": 1645600235377
   },
   "VCS_STATE": {
     "provider": "GitHub",
