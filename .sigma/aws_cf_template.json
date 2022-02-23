@@ -12,28 +12,28 @@
     }
   },
   "Outputs": {
-    "apigKeyPairskeypairsANY": {
-      "Description": "URL of KeyPairs/keypairs:ANY endpoint",
+    "apigX12FAWebHookX12FAWebHookANY": {
+      "Description": "URL of X12FAWebHook/X12FAWebHook:ANY endpoint",
       "Value": {
         "Fn::Join": [
           "",
           [
             "https://",
-            "7l8l44lsj6",
+            "vijnxfanqc",
             ".execute-api.",
             {
               "Ref": "AWS::Region"
             },
             ".amazonaws.com/",
-            "api",
-            "/keypairs"
+            "dev",
+            "/X12FAWebHook"
           ]
         ]
       }
     },
-    "cognitoApiGateway": {
-      "Description": "ID of Cognito user pool ApiGateway",
-      "Value": "us-east-1_jfB99rZCt"
+    "sqssqs": {
+      "Description": "URL of SQS queue sqs",
+      "Value": "https://sqs.us-east-1.amazonaws.com/263248768798/sqs"
     },
     "MyFirstProject": {
       "Description": "ARN of Lambda function MyFirstProject",
@@ -43,79 +43,14 @@
           "Arn"
         ]
       }
-    },
-    "apigjul20jul20ANY": {
-      "Description": "URL of jul20/jul20:ANY endpoint",
-      "Value": {
-        "Fn::Join": [
-          "",
-          [
-            "https://",
-            "b42qvqd0a9",
-            ".execute-api.",
-            {
-              "Ref": "AWS::Region"
-            },
-            ".amazonaws.com/",
-            "dev",
-            "/jul20"
-          ]
-        ]
-      }
-    },
-    "kdemosubdirkdemosubnode": {
-      "Description": "ARN of Lambda function kdemosubnode",
-      "Value": {
-        "Fn::GetAtt": [
-          "kdemosubdirkdemosubnode",
-          "Arn"
-        ]
-      }
-    },
-    "apigMockPaddle20proxyGET": {
-      "Description": "URL of MockPaddle/2.0/{proxy+}:GET endpoint",
-      "Value": {
-        "Fn::Join": [
-          "",
-          [
-            "https://",
-            "eeaq92konl",
-            ".execute-api.",
-            {
-              "Ref": "AWS::Region"
-            },
-            ".amazonaws.com/",
-            "api",
-            "/2.0/{proxy+}"
-          ]
-        ]
-      }
-    },
-    "krootpy": {
-      "Description": "ARN of Lambda function krootpy",
-      "Value": {
-        "Fn::GetAtt": [
-          "krootpy",
-          "Arn"
-        ]
-      }
-    },
-    "kdemosubdirkdemosubpy": {
-      "Description": "ARN of Lambda function kdemosubpy",
-      "Value": {
-        "Fn::GetAtt": [
-          "kdemosubdirkdemosubpy",
-          "Arn"
-        ]
-      }
     }
   },
   "Resources": {
-    "apigKeyPairskeypairsANY": {
+    "apigX12FAWebHookX12FAWebHookANY": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
-        "RestApiId": "7l8l44lsj6",
-        "ResourceId": "yqiga4",
+        "RestApiId": "vijnxfanqc",
+        "ResourceId": "k80969",
         "HttpMethod": "ANY",
         "AuthorizationType": "NONE",
         "MethodResponses": [
@@ -128,58 +63,6 @@
           "IntegrationHttpMethod": "POST",
           "Uri": {
             "Fn::Sub": "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${MyFirstProject.Arn}/invocations"
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": "200"
-            }
-          ]
-        }
-      }
-    },
-    "apigjul20jul20ANY": {
-      "Type": "AWS::ApiGateway::Method",
-      "Properties": {
-        "RestApiId": "b42qvqd0a9",
-        "ResourceId": "rxi2wl",
-        "HttpMethod": "ANY",
-        "AuthorizationType": "NONE",
-        "MethodResponses": [
-          {
-            "StatusCode": "200"
-          }
-        ],
-        "Integration": {
-          "Type": "AWS",
-          "IntegrationHttpMethod": "POST",
-          "Uri": {
-            "Fn::Sub": "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${kdemosubdirkdemosubnode.Arn}/invocations"
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": "200"
-            }
-          ]
-        }
-      }
-    },
-    "apigMockPaddle20proxyGET": {
-      "Type": "AWS::ApiGateway::Method",
-      "Properties": {
-        "RestApiId": "eeaq92konl",
-        "ResourceId": "00htxl",
-        "HttpMethod": "GET",
-        "AuthorizationType": "NONE",
-        "MethodResponses": [
-          {
-            "StatusCode": "200"
-          }
-        ],
-        "Integration": {
-          "Type": "AWS",
-          "IntegrationHttpMethod": "POST",
-          "Uri": {
-            "Fn::Sub": "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${krootpy.Arn}/invocations"
           },
           "IntegrationResponses": [
             {
@@ -218,7 +101,6 @@
         },
         "Environment": {
           "Variables": {
-            "Kumu1": "Vari1",
             "SIGMA_AWS_ACC_ID": {
               "Ref": "AWS::AccountId"
             }
@@ -257,9 +139,9 @@
                 {
                   "Effect": "Allow",
                   "Action": [
-                    "cognito-idp:ListUsers"
+                    "sqs:ReceiveMessage"
                   ],
-                  "Resource": "arn:aws:cognito-idp:us-east-1:263248768798:userpool/us-east-1_jfB99rZCt"
+                  "Resource": "arn:aws:sqs:us-east-1:263248768798:sqs"
                 }
               ]
             }
@@ -267,7 +149,7 @@
         ]
       }
     },
-    "apigKeyPairskeypairsANYPermission": {
+    "apigX12FAWebHookX12FAWebHookANYPermission": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -279,268 +161,23 @@
             "arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${__ApiId__}/*/${__Method__}${__Path__}",
             {
               "__Method__": "*",
-              "__Path__": "/keypairs",
-              "__ApiId__": "7l8l44lsj6"
+              "__Path__": "/X12FAWebHook",
+              "__ApiId__": "vijnxfanqc"
             }
           ]
         },
         "Principal": "apigateway.amazonaws.com"
       }
     },
-    "kdemosubdirkdemosubnode": {
-      "Type": "AWS::Lambda::Function",
-      "Properties": {
-        "FunctionName": "kdemosubnode",
-        "Description": "Invokes functions defined in kdemosubdir/kdemosubnode.js in project MyFirstProject. Generated by Sigma.",
-        "Code": {
-          "S3Bucket": {
-            "Ref": "lambdaCodeBucketParameter"
-          },
-          "S3Key": {
-            "Ref": "lambdaCodeKeyParameter"
-          }
-        },
-        "MemorySize": 128,
-        "Handler": "kdemosubdir/kdemosubnode.handler",
-        "Timeout": 60,
-        "Runtime": "nodejs14.x",
-        "Layers": [],
-        "TracingConfig": {
-          "Mode": "PassThrough"
-        },
-        "Role": {
-          "Fn::GetAtt": [
-            "kdemosubdirkdemosubnodeExecutionRole",
-            "Arn"
-          ]
-        },
-        "Environment": {
-          "Variables": {
-            "Kumu1": "Vari1",
-            "SIGMA_AWS_ACC_ID": {
-              "Ref": "AWS::AccountId"
-            }
-          }
-        }
-      }
-    },
-    "kdemosubdirkdemosubnodeExecutionRole": {
-      "Type": "AWS::IAM::Role",
-      "Properties": {
-        "ManagedPolicyArns": [
-          "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
-        ],
-        "AssumeRolePolicyDocument": {
-          "Version": "2012-10-17",
-          "Statement": [
-            {
-              "Action": [
-                "sts:AssumeRole"
-              ],
-              "Effect": "Allow",
-              "Principal": {
-                "Service": [
-                  "lambda.amazonaws.com"
-                ]
-              }
-            }
-          ]
-        }
-      }
-    },
-    "apigjul20jul20ANYPermission": {
-      "Type": "AWS::Lambda::Permission",
-      "Properties": {
-        "Action": "lambda:InvokeFunction",
-        "FunctionName": {
-          "Ref": "kdemosubdirkdemosubnode"
-        },
-        "SourceArn": {
-          "Fn::Sub": [
-            "arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${__ApiId__}/*/${__Method__}${__Path__}",
-            {
-              "__Method__": "*",
-              "__Path__": "/jul20",
-              "__ApiId__": "b42qvqd0a9"
-            }
-          ]
-        },
-        "Principal": "apigateway.amazonaws.com"
-      }
-    },
-    "krootpy": {
-      "Type": "AWS::Lambda::Function",
-      "Properties": {
-        "FunctionName": "krootpy",
-        "Description": "Invokes functions defined in krootpy.py in project MyFirstProject. Generated by Sigma.",
-        "Code": {
-          "S3Bucket": {
-            "Ref": "lambdaCodeBucketParameter"
-          },
-          "S3Key": {
-            "Ref": "lambdaCodeKeyParameter"
-          }
-        },
-        "MemorySize": 128,
-        "Handler": "krootpy.handler",
-        "Timeout": 60,
-        "Runtime": "python3.9",
-        "Layers": [],
-        "TracingConfig": {
-          "Mode": "PassThrough"
-        },
-        "Role": {
-          "Fn::GetAtt": [
-            "krootpyExecutionRole",
-            "Arn"
-          ]
-        },
-        "Environment": {
-          "Variables": {
-            "Kumu1": "Vari1",
-            "SIGMA_AWS_ACC_ID": {
-              "Ref": "AWS::AccountId"
-            }
-          }
-        }
-      }
-    },
-    "krootpyExecutionRole": {
-      "Type": "AWS::IAM::Role",
-      "Properties": {
-        "ManagedPolicyArns": [
-          "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
-        ],
-        "AssumeRolePolicyDocument": {
-          "Version": "2012-10-17",
-          "Statement": [
-            {
-              "Action": [
-                "sts:AssumeRole"
-              ],
-              "Effect": "Allow",
-              "Principal": {
-                "Service": [
-                  "lambda.amazonaws.com"
-                ]
-              }
-            }
-          ]
-        }
-      }
-    },
-    "apigMockPaddle20proxyGETPermission": {
-      "Type": "AWS::Lambda::Permission",
-      "Properties": {
-        "Action": "lambda:InvokeFunction",
-        "FunctionName": {
-          "Ref": "krootpy"
-        },
-        "SourceArn": {
-          "Fn::Sub": [
-            "arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${__ApiId__}/*/${__Method__}${__Path__}",
-            {
-              "__Method__": "GET",
-              "__Path__": "/2.0/{proxy+}",
-              "__ApiId__": "eeaq92konl"
-            }
-          ]
-        },
-        "Principal": "apigateway.amazonaws.com"
-      }
-    },
-    "kdemosubdirkdemosubpy": {
-      "Type": "AWS::Lambda::Function",
-      "Properties": {
-        "FunctionName": "kdemosubpy",
-        "Description": "Invokes functions defined in kdemosubdir/kdemosubpy.py in project MyFirstProject. Generated by Sigma.",
-        "Code": {
-          "S3Bucket": {
-            "Ref": "lambdaCodeBucketParameter"
-          },
-          "S3Key": {
-            "Ref": "lambdaCodeKeyParameter"
-          }
-        },
-        "MemorySize": 128,
-        "Handler": "kdemosubdir/kdemosubpy.handler",
-        "Timeout": 60,
-        "Runtime": "python3.9",
-        "Layers": [],
-        "TracingConfig": {
-          "Mode": "PassThrough"
-        },
-        "Role": {
-          "Fn::GetAtt": [
-            "kdemosubdirkdemosubpyExecutionRole",
-            "Arn"
-          ]
-        },
-        "Environment": {
-          "Variables": {
-            "Kumu1": "Vari1",
-            "SIGMA_AWS_ACC_ID": {
-              "Ref": "AWS::AccountId"
-            }
-          }
-        }
-      }
-    },
-    "kdemosubdirkdemosubpyExecutionRole": {
-      "Type": "AWS::IAM::Role",
-      "Properties": {
-        "ManagedPolicyArns": [
-          "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
-        ],
-        "AssumeRolePolicyDocument": {
-          "Version": "2012-10-17",
-          "Statement": [
-            {
-              "Action": [
-                "sts:AssumeRole"
-              ],
-              "Effect": "Allow",
-              "Principal": {
-                "Service": [
-                  "lambda.amazonaws.com"
-                ]
-              }
-            }
-          ]
-        }
-      }
-    },
-    "apigKeyPairsDeployment1631885003341": {
+    "apigX12FAWebHookDeployment1645600150426": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
-        "RestApiId": "7l8l44lsj6",
-        "Description": "An API deployment generated by Sigma for API KeyPairs",
-        "StageName": "api"
-      },
-      "DependsOn": [
-        "apigKeyPairskeypairsANY"
-      ]
-    },
-    "apigjul20Deployment1631885003341": {
-      "Type": "AWS::ApiGateway::Deployment",
-      "Properties": {
-        "RestApiId": "b42qvqd0a9",
-        "Description": "An API deployment generated by Sigma for API jul20",
+        "RestApiId": "vijnxfanqc",
+        "Description": "An API deployment generated by Sigma for API X12FAWebHook",
         "StageName": "dev"
       },
       "DependsOn": [
-        "apigjul20jul20ANY"
-      ]
-    },
-    "apigMockPaddleDeployment1631885003341": {
-      "Type": "AWS::ApiGateway::Deployment",
-      "Properties": {
-        "RestApiId": "eeaq92konl",
-        "Description": "An API deployment generated by Sigma for API MockPaddle",
-        "StageName": "api"
-      },
-      "DependsOn": [
-        "apigMockPaddle20proxyGET"
+        "apigX12FAWebHookX12FAWebHookANY"
       ]
     }
   }

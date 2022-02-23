@@ -1,8 +1,8 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "b6e2e48d-a753-4c8a-b739-a583a2cf644a": {
-        "id": "b6e2e48d-a753-4c8a-b739-a583a2cf644a",
+      "9505faf7-feb9-4b8b-b691-c968425b3af9": {
+        "id": "9505faf7-feb9-4b8b-b691-c968425b3af9",
         "parent": null,
         "name": "MyFirstProject.js",
         "type": "JS_LAMBDA",
@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "MyFirstProject.js",
         "cursor": {
-          "lineNumber": 3,
-          "column": 1
+          "lineNumber": 20,
+          "column": 3
         },
         "config": {
           "runtime": "nodejs14.x",
@@ -24,29 +24,22 @@
         },
         "triggers": [
           {
-            "resourceName": "apigKeyPairskeypairsany",
+            "resourceName": "apigX12FAWebHookX12FAWebHookany",
             "config": {}
           }
         ],
-        "lastUpdated": 1631884904820,
+        "lastUpdated": 1645600029705,
         "testCases": {
-          "a896fd8f-d23c-46f1-bdc6-45c6fd1a1f80": {
-            "id": "a896fd8f-d23c-46f1-bdc6-45c6fd1a1f80",
-            "functionId": "b6e2e48d-a753-4c8a-b739-a583a2cf644a",
+          "b9a09bf1-82f6-4a51-a39d-26249024e5ef": {
+            "id": "b9a09bf1-82f6-4a51-a39d-26249024e5ef",
+            "functionId": "9505faf7-feb9-4b8b-b691-c968425b3af9",
             "name": "My First Test Case",
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
-          },
-          "830958a7-8771-49de-a4ad-5351c4dad33c": {
-            "id": "830958a7-8771-49de-a4ad-5351c4dad33c",
-            "name": "Test event",
-            "functionId": "b6e2e48d-a753-4c8a-b739-a583a2cf644a",
-            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
-            "eventTemplate": "hello-world"
           }
         }
       },
-      "ded76535-b3c4-4976-8eb5-e658f1e3036a": {
-        "id": "ded76535-b3c4-4976-8eb5-e658f1e3036a",
+      "6dbe2398-885b-4434-a7cd-1d2447d22998": {
+        "id": "6dbe2398-885b-4434-a7cd-1d2447d22998",
         "parent": null,
         "name": "package.json",
         "type": "JSON_FILE",
@@ -54,490 +47,58 @@
         "children": [],
         "isRemovable": true,
         "filePath": "package.json"
-      },
-      "a628455c-5e5e-4062-ab6c-e5a513be9e6e": {
-        "id": "a628455c-5e5e-4062-ab6c-e5a513be9e6e",
-        "parent": null,
-        "name": "kdemosubdir",
-        "type": "DIRECTORY",
-        "isDirectory": true,
-        "children": [
-          "5381448d-6021-4e63-8d8d-2c73e34e2276",
-          "e2d6de82-ef29-4cad-9260-20cea5fa75b9",
-          "cea2844c-c422-4cff-86cb-b970e82b3df6"
-        ],
-        "isRemovable": true,
-        "filePath": "kdemosubdir"
-      },
-      "5381448d-6021-4e63-8d8d-2c73e34e2276": {
-        "id": "5381448d-6021-4e63-8d8d-2c73e34e2276",
-        "parent": "a628455c-5e5e-4062-ab6c-e5a513be9e6e",
-        "name": "kdemosubnode.js",
-        "type": "JS_LAMBDA",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "kdemosubdir/kdemosubnode.js",
-        "cursor": {
-          "lineNumber": 3,
-          "column": 28
-        },
-        "config": {
-          "runtime": "nodejs14.x",
-          "handler": "handler",
-          "timeout": 60,
-          "memory": 128,
-          "layers": [],
-          "name": "kdemosubnode"
-        },
-        "triggers": [
-          {
-            "resourceName": "apigjul20jul20any",
-            "config": {}
-          }
-        ],
-        "lastUpdated": 1631884903872,
-        "testCases": {
-          "a71aee20-cf3a-4275-a07c-d068ab5f7ecb": {
-            "id": "a71aee20-cf3a-4275-a07c-d068ab5f7ecb",
-            "name": "Test event",
-            "functionId": "5381448d-6021-4e63-8d8d-2c73e34e2276",
-            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
-            "eventTemplate": "hello-world"
-          }
-        }
-      },
-      "6edd3026-ef32-4ae0-9528-50da98b54e36": {
-        "id": "6edd3026-ef32-4ae0-9528-50da98b54e36",
-        "parent": null,
-        "name": "krootpy.py",
-        "type": "PYTHON_LAMBDA",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "krootpy.py",
-        "cursor": {
-          "lineNumber": 3,
-          "column": 5
-        },
-        "config": {
-          "runtime": "python3.9",
-          "handler": "handler",
-          "timeout": 60,
-          "memory": 128,
-          "layers": [],
-          "name": "krootpy"
-        },
-        "triggers": [
-          {
-            "resourceName": "apigMockPaddle20proxyget",
-            "config": {}
-          }
-        ],
-        "lastUpdated": 1631884902341,
-        "testCases": {
-          "34901aa4-cd32-4f0c-805b-5a1cdf6bdcc5": {
-            "id": "34901aa4-cd32-4f0c-805b-5a1cdf6bdcc5",
-            "name": "Test event",
-            "functionId": "6edd3026-ef32-4ae0-9528-50da98b54e36",
-            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
-            "eventTemplate": "hello-world"
-          }
-        }
-      },
-      "b539080b-20f4-49bf-8e98-4d5f1a155404": {
-        "id": "b539080b-20f4-49bf-8e98-4d5f1a155404",
-        "parent": null,
-        "name": "requirements.txt",
-        "type": "TEXT_FILE",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "requirements.txt"
-      },
-      "e2d6de82-ef29-4cad-9260-20cea5fa75b9": {
-        "id": "e2d6de82-ef29-4cad-9260-20cea5fa75b9",
-        "parent": "a628455c-5e5e-4062-ab6c-e5a513be9e6e",
-        "name": "kdemosubpy.py",
-        "type": "PYTHON_LAMBDA",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "kdemosubdir/kdemosubpy.py",
-        "cursor": {
-          "lineNumber": 4,
-          "column": 28
-        },
-        "config": {
-          "runtime": "python3.9",
-          "handler": "handler",
-          "timeout": 60,
-          "memory": 128,
-          "layers": [],
-          "name": "kdemosubpy"
-        },
-        "triggers": [],
-        "lastUpdated": 1631883587029,
-        "testCases": {
-          "7cdeebf1-29f3-464d-8008-4c2773e58304": {
-            "id": "7cdeebf1-29f3-464d-8008-4c2773e58304",
-            "name": "Test event",
-            "functionId": "e2d6de82-ef29-4cad-9260-20cea5fa75b9",
-            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
-            "eventTemplate": "hello-world"
-          }
-        }
-      },
-      "cea2844c-c422-4cff-86cb-b970e82b3df6": {
-        "id": "cea2844c-c422-4cff-86cb-b970e82b3df6",
-        "parent": "a628455c-5e5e-4062-ab6c-e5a513be9e6e",
-        "name": "__init__.py",
-        "type": "PYTHON_FILE",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "kdemosubdir/__init__.py"
       }
     },
     "openFiles": [
-      "b6e2e48d-a753-4c8a-b739-a583a2cf644a",
-      "5381448d-6021-4e63-8d8d-2c73e34e2276",
-      "6edd3026-ef32-4ae0-9528-50da98b54e36",
-      "e2d6de82-ef29-4cad-9260-20cea5fa75b9"
+      "9505faf7-feb9-4b8b-b691-c968425b3af9"
     ],
-    "currentFileId": "b6e2e48d-a753-4c8a-b739-a583a2cf644a",
+    "currentFileId": "9505faf7-feb9-4b8b-b691-c968425b3af9",
     "resources": {
-      "apigKeyPairskeypairsany": {
-        "name": "apigKeyPairskeypairsany",
+      "apigX12FAWebHookX12FAWebHookany": {
+        "name": "apigX12FAWebHookX12FAWebHookany",
         "type": "API_GATEWAY",
         "config": {
           "apiType": 1,
           "apiMode": 1,
-          "apiName": "KeyPairs",
-          "apiId": "7l8l44lsj6",
+          "apiName": "X12FAWebHook",
+          "apiId": "vijnxfanqc",
           "endpointType": "EDGE",
-          "rootResourceId": "4rn9ymmwsh",
+          "rootResourceId": "fmvwsd2stg",
           "existingResources": {
-            "/": "4rn9ymmwsh",
-            "/keypairs": "yqiga4"
+            "/": "fmvwsd2stg",
+            "/X12FAWebHook": "k80969"
           },
           "resourceMode": 1,
-          "resourcePath": "/keypairs",
-          "resourceName": "keypairs",
-          "resourceId": "yqiga4",
-          "restMethod": "ANY",
-          "proxyIntegration": false,
-          "enableCORS": false,
-          "stageMode": 1,
-          "stageName": "api",
-          "stageDeploymentId": "ht3wkn",
-          "mode": 1
-        }
-      },
-      "cognitoApiGateway": {
-        "name": "cognitoApiGateway",
-        "type": "CognitoIdentityServiceProvider",
-        "config": {
-          "mode": 1,
-          "name": "ApiGateway",
-          "arn": "arn:aws:cognito-idp:us-east-1:263248768798:userpool/us-east-1_jfB99rZCt",
-          "userPool": {
-            "Id": "us-east-1_jfB99rZCt",
-            "Name": "ApiGateway",
-            "LambdaConfig": {
-              "PostConfirmation": "arn:aws:lambda:us-east-1:263248768798:function:induuuu1113"
-            },
-            "Policies": {
-              "PasswordPolicy": {
-                "MinimumLength": 8,
-                "RequireUppercase": true,
-                "RequireLowercase": true,
-                "RequireNumbers": true,
-                "RequireSymbols": true,
-                "TemporaryPasswordValidityDays": 7
-              }
-            },
-            "VerificationMessageTemplate": {
-              "DefaultEmailOption": "CONFIRM_WITH_CODE"
-            },
-            "MfaConfiguration": "OFF",
-            "EmailConfiguration": {
-              "EmailSendingAccount": "COGNITO_DEFAULT"
-            },
-            "UserPoolTags": {},
-            "AdminCreateUserConfig": {
-              "AllowAdminCreateUserOnly": false,
-              "UnusedAccountValidityDays": 7
-            },
-            "SchemaAttributes": [
-              {
-                "Name": "sub",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": false,
-                "Required": true,
-                "StringAttributeConstraints": {
-                  "MinLength": "1",
-                  "MaxLength": "2048"
-                }
-              },
-              {
-                "Name": "name",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false,
-                "StringAttributeConstraints": {
-                  "MinLength": "0",
-                  "MaxLength": "2048"
-                }
-              },
-              {
-                "Name": "given_name",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false,
-                "StringAttributeConstraints": {
-                  "MinLength": "0",
-                  "MaxLength": "2048"
-                }
-              },
-              {
-                "Name": "family_name",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false,
-                "StringAttributeConstraints": {
-                  "MinLength": "0",
-                  "MaxLength": "2048"
-                }
-              },
-              {
-                "Name": "middle_name",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false,
-                "StringAttributeConstraints": {
-                  "MinLength": "0",
-                  "MaxLength": "2048"
-                }
-              },
-              {
-                "Name": "nickname",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false,
-                "StringAttributeConstraints": {
-                  "MinLength": "0",
-                  "MaxLength": "2048"
-                }
-              },
-              {
-                "Name": "preferred_username",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false,
-                "StringAttributeConstraints": {
-                  "MinLength": "0",
-                  "MaxLength": "2048"
-                }
-              },
-              {
-                "Name": "profile",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false,
-                "StringAttributeConstraints": {
-                  "MinLength": "0",
-                  "MaxLength": "2048"
-                }
-              },
-              {
-                "Name": "picture",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false,
-                "StringAttributeConstraints": {
-                  "MinLength": "0",
-                  "MaxLength": "2048"
-                }
-              },
-              {
-                "Name": "website",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false,
-                "StringAttributeConstraints": {
-                  "MinLength": "0",
-                  "MaxLength": "2048"
-                }
-              },
-              {
-                "Name": "email",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": true,
-                "StringAttributeConstraints": {
-                  "MinLength": "0",
-                  "MaxLength": "2048"
-                }
-              },
-              {
-                "Name": "email_verified",
-                "AttributeDataType": "Boolean",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false
-              },
-              {
-                "Name": "gender",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false,
-                "StringAttributeConstraints": {
-                  "MinLength": "0",
-                  "MaxLength": "2048"
-                }
-              },
-              {
-                "Name": "birthdate",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false,
-                "StringAttributeConstraints": {
-                  "MinLength": "10",
-                  "MaxLength": "10"
-                }
-              },
-              {
-                "Name": "zoneinfo",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false,
-                "StringAttributeConstraints": {
-                  "MinLength": "0",
-                  "MaxLength": "2048"
-                }
-              },
-              {
-                "Name": "locale",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false,
-                "StringAttributeConstraints": {
-                  "MinLength": "0",
-                  "MaxLength": "2048"
-                }
-              },
-              {
-                "Name": "phone_number",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false,
-                "StringAttributeConstraints": {
-                  "MinLength": "0",
-                  "MaxLength": "2048"
-                }
-              },
-              {
-                "Name": "phone_number_verified",
-                "AttributeDataType": "Boolean",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false
-              },
-              {
-                "Name": "address",
-                "AttributeDataType": "String",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false,
-                "StringAttributeConstraints": {
-                  "MinLength": "0",
-                  "MaxLength": "2048"
-                }
-              },
-              {
-                "Name": "updated_at",
-                "AttributeDataType": "Number",
-                "DeveloperOnlyAttribute": false,
-                "Mutable": true,
-                "Required": false,
-                "NumberAttributeConstraints": {
-                  "MinValue": "0"
-                }
-              }
-            ]
-          }
-        }
-      },
-      "apigjul20jul20any": {
-        "name": "apigjul20jul20any",
-        "type": "API_GATEWAY",
-        "config": {
-          "apiType": 1,
-          "apiMode": 1,
-          "apiName": "jul20",
-          "apiId": "b42qvqd0a9",
-          "endpointType": "EDGE",
-          "rootResourceId": "73z5o32xl1",
-          "existingResources": {
-            "/": "73z5o32xl1",
-            "/jul20": "rxi2wl"
-          },
-          "resourceMode": 1,
-          "resourcePath": "/jul20",
-          "resourceName": "jul20",
-          "resourceId": "rxi2wl",
+          "resourcePath": "/X12FAWebHook",
+          "resourceName": "X12FAWebHook",
+          "resourceId": "k80969",
           "restMethod": "ANY",
           "proxyIntegration": false,
           "enableCORS": false,
           "stageMode": 1,
           "stageName": "dev",
-          "stageDeploymentId": "pj6j29",
+          "stageDeploymentId": "hcgsb5",
           "mode": 1
         }
       },
-      "apigMockPaddle20proxyget": {
-        "name": "apigMockPaddle20proxyget",
-        "type": "API_GATEWAY",
+      "sqssqs": {
+        "name": "sqssqs",
+        "type": "SQS",
         "config": {
-          "apiType": 1,
-          "apiMode": 1,
-          "apiName": "MockPaddle",
-          "apiId": "eeaq92konl",
-          "endpointType": "EDGE",
-          "rootResourceId": "g3hogy4cf9",
-          "existingResources": {
-            "/2.0/{proxy+}": "00htxl",
-            "/": "g3hogy4cf9",
-            "/2.0": "lckdvi"
-          },
-          "resourceMode": 1,
-          "resourcePath": "/2.0/{proxy+}",
-          "resourceName": "2.0/{proxy+}",
-          "resourceId": "00htxl",
-          "restMethod": "GET",
-          "proxyIntegration": false,
-          "enableCORS": false,
-          "stageMode": 1,
-          "stageName": "api",
-          "stageDeploymentId": "t2a5e1",
-          "mode": 1
+          "mode": 1,
+          "existing": true,
+          "name": "sqs",
+          "url": "https://sqs.us-east-1.amazonaws.com/263248768798/sqs",
+          "deliveryDelay": "0",
+          "deliveryDelayUnit": "seconds",
+          "queueType": "standardQueue",
+          "defaultVisibilityTimeout": "30",
+          "defaultVisibilityTimeoutUnit": "seconds",
+          "messageRetentionPeriod": "345600",
+          "messageRetentionPeriodUnit": "seconds",
+          "maximumMessageSize": 256,
+          "receiveMessageWaitTime": "0",
+          "queueARN": "arn:aws:sqs:us-east-1:263248768798:sqs"
         }
       }
     },
@@ -555,14 +116,6 @@
         "shouldPersist": false,
         "displayOnly": false,
         "editable": false
-      },
-      {
-        "lambdaId": "all",
-        "varKey": "Kumu1",
-        "varValue": "Vari1",
-        "shouldPersist": true,
-        "displayOnly": false,
-        "editable": true
       }
     ],
     "packageJSON": {
@@ -573,24 +126,12 @@
           "version": "2.817.0",
           "dev": true,
           "notRemovable": false
-        },
-        "mysql": {
-          "name": "mysql",
-          "version": "2.18.1",
-          "dev": false,
-          "language": "nodejs"
-        },
-        "numpy": {
-          "name": "numpy",
-          "version": "1.21.2",
-          "dev": false,
-          "language": "python"
         }
       }
     }
   },
   "PROJECT_META": {
-    "sigmaVersion": "1.9.4",
+    "sigmaVersion": "1.10.0",
     "projectName": "MyFirstProject",
     "projectDescription": "My First Project",
     "projectVersion": "1.0.0",
@@ -598,7 +139,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1631884997975
+    "lastSave": 1645600137410
   },
   "VCS_STATE": {
     "provider": "GitHub",

@@ -1,19 +1,18 @@
 const AWS = require('aws-sdk');
-const cognito_idp = new AWS.CognitoIdentityServiceProvider();
-const my = require('mysql')
+const sqs = new AWS.SQS();
 
 exports.handler = async (event) => {
-    debugger;
     try {
-        let data = await cognito_idp.listUsers({
-            UserPoolId: "us-east-1_jfB99rZCt",
-            Limit: 10
+        let data = await sqs.receiveMessage({
+            QueueUrl: `https://sqs.${process.env.AWS_DEFAULT_REGION}.amazonaws.com/${process.env.SIGMA_AWS_ACC_ID}/sqs`,
+            MaxNumberOfMessages: 1,
+            VisibilityTimeout: 30,
+            WaitTimeSeconds: 0,
+            AttributeNames: ['All']
         }).promise();
-        console.log("rootnode");
-        console.log(my);
+        console.log(data);
 
     } catch (err) {
-        console.log(err);
         // error handling goes here
     };
 
